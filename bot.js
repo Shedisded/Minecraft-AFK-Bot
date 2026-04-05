@@ -72,3 +72,17 @@ bot.on('spawn', () => {
     setTimeout(() => bot.setControlState('jump', false), 500);
   }, 10000); 
 });
+bot.on('spawn', () => {
+  // Replace 'YourPassword123' with whatever password you want the bot to use
+  const botPassword = "YourPassword123";
+
+  // Check if the bot needs to register or login
+  bot.chat(`/register ${botPassword} ${botPassword}`);
+  
+  // Also try login just in case it's already registered
+  setTimeout(() => {
+    bot.chat(`/login ${botPassword}`);
+  }, 2000);
+
+  console.log("Bot attempted to register/login.");
+});
