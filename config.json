@@ -1,6 +1,6 @@
 {
-  "serverHost": "example.aternos.me",
-  "serverPort": 12345,
-  "botUsername": "MyBot",
+  "serverHost": "dimdsmp.falix.gg",
+  "serverPort": 25264,
+  "botUsername": "null",
   "botChunk": 1
 }
