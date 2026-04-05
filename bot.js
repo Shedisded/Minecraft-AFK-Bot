@@ -74,10 +74,10 @@ bot.on('spawn', () => {
 });
 bot.on('spawn', () => {
   // Replace 'YourPassword123' with whatever password you want the bot to use
-  const botPassword = "YourPassword123";
+  const botPassword = "ggschaticooked";
 
   // Check if the bot needs to register or login
-  bot.chat(`/register ${botPassword} ${botPassword}`);
+  bot.chat(`/register ${botPassword}`);
   
   // Also try login just in case it's already registered
   setTimeout(() => {
