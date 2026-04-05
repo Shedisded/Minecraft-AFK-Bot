@@ -64,3 +64,11 @@ bot.on('error', (err) => {
 bot.on('end', () => {
   console.log('⛔️ Bot Disconnected!');
 });
+bot.on('spawn', () => {
+  console.log("Bot spawned - Starting anti-AFK movement");
+  setInterval(() => {
+    // Makes the bot jump every 10 seconds
+    bot.setControlState('jump', true);
+    setTimeout(() => bot.setControlState('jump', false), 500);
+  }, 10000); 
+});
